@@ -66,7 +66,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="77" width="200" height="85"/>
+                                    <rect key="frame" x="16" y="114" width="200" height="48"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UOD-BA-q2i">
@@ -105,6 +105,15 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vHG-7Z-zzy"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEL-C2-81B">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="82" width="200" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -114,6 +123,7 @@
                                 <exclude reference="Stu-TB-Mfx"/>
                                 <exclude reference="HMF-27-pfA"/>
                                 <exclude reference="SCN-PY-4uV"/>
+                                <exclude reference="kEL-C2-81B"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -123,6 +133,7 @@
                                 <include reference="Stu-TB-Mfx"/>
                                 <include reference="HMF-27-pfA"/>
                                 <include reference="SCN-PY-4uV"/>
+                                <include reference="kEL-C2-81B"/>
                             </mask>
                         </variation>
                     </view>
@@ -132,11 +143,12 @@
                         <outlet property="enterNameTextField" destination="Stu-TB-Mfx" id="6jO-gb-iEW"/>
                         <outlet property="mailButton" destination="SCN-PY-4uV" id="HG4-0N-16D"/>
                         <outlet property="messageLabel" destination="inQ-rf-Rly" id="YpT-JM-M4K"/>
+                        <outlet property="nameLabel" destination="kEL-C2-81B" id="fZX-Pk-CnL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1416" y="198"/>
+            <point key="canvasLocation" x="1249.5" y="198"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VOj-0a-NG9">
@@ -155,7 +167,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGO-zu-z1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="198"/>
+            <point key="canvasLocation" x="87" y="198"/>
         </scene>
     </scenes>
     <resources>
